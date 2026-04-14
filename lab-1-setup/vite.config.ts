@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Required for GitHub Pages when repository is named "lab-1-setup".
-  base: '/lab-1-setup/',
+  // GitHub Pages needs the repo subpath; Vercel should use root.
+  base: process.env.GITHUB_ACTIONS ? '/lab-1-setup/' : '/',
   plugins: [react()],
 })

@@ -1,0 +1,14 @@
+# Archives (source was downloaded as zip)
+*.zip
+
+# Dependencies
+node_modules/
+
+# Logs & env
+npm-debug.log*
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db

@@ -32,3 +32,6 @@ docker pull ghcr.io/vieronikaosheiko/lab-1-setup:latest
 - Require status checks to pass before merging
 - Обрати check: `quality-checks`
 
+## PR checks (для звіту)
+Для підтвердження роботи CI на Pull Request створіть PR з гілки у `main` і зробіть скрін успішного проходження `quality-checks`.
+

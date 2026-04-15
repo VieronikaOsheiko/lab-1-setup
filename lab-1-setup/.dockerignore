@@ -3,3 +3,8 @@ dist
 .git
 .github
 npm-debug.log*
+node_modules
+dist
+.git
+.github
+npm-debug.log*

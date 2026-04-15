@@ -49,6 +49,12 @@ $url = (minikube service web-app --url)
 curl $url
 ```
 
+Альтернативне підтвердження hostname Pod (для звіту):
+```powershell
+kubectl get pods
+kubectl exec -it <POD_NAME> -- hostname
+```
+
 ## Етап 4: Rolling Update та Rollback
 Оновлення образу:
 ```powershell
@@ -78,7 +84,7 @@ minikube dashboard
 ## Що додати у звіт (скріни)
 - `kubectl cluster-info` та `kubectl get nodes`
 - `kubectl get pods -o wide` після масштабування (3 pods)
-- `kubectl get svc` + результат звернення до сервісу (curl/браузер, де видно hostname pod)
+- `kubectl get svc` + результат звернення до сервісу (curl/браузер, де видно hostname pod) або `kubectl exec ... hostname`
 - `minikube addons enable metrics-server` + `kubectl top pods`
 - Вікно `minikube dashboard`
 

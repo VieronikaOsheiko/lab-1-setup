@@ -4,7 +4,9 @@ terraform {
   required_providers {
     vercel = {
       source  = "vercel/vercel"
-      version = "~> 1.0"
+      # v1.x не підтримує нові токени формату vcp_... (які показує UI Vercel)
+      # Оновлюємо провайдер, щоб Terraform міг прийняти такі токени.
+      version = "~> 3.0"
     }
   }
 }

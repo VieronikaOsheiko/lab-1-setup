@@ -1,0 +1,8 @@
+# IMPORTANT:
+# - Create your own terraform.tfvars next to this file
+# - DO NOT commit terraform.tfvars (it is ignored by .gitignore)
+
+vercel_api_token = "paste-your-vercel-token-here"
+student_id       = "your-student-id"
+github_repo      = "VieronikaOsheiko/lab-1-setup"
+
